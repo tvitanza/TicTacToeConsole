@@ -1,7 +1,7 @@
 public class TicTacToeWin {
-    public static void WinCondition(char[][] state) {
+    public static void winCondition(char[][] state) {   // camelCase
         if ((state[0][0] == 'x') && (state[0][1] == 'x') && (state[0][2] == 'x')) {
-            System.out.println("\nVictoire des X".toUpperCase());
+            System.out.println("\nVictoire des X".toUpperCase());   // ce code est répété => tu peux en faire une fonction
             System.exit(0);
         } else if ((state[0][0] == 'o') && (state[0][1] == 'o') && (state[0][2] == 'o')) {
             System.out.println("\nVictoiredes O".toUpperCase());
