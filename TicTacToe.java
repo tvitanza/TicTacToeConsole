@@ -10,7 +10,7 @@ public class TicTacToe {
 
         int turn = 1;
         for (int j = 1; j < 9; ++j) {
-            if (turn % 2 != 0) {
+            if (turn % 2 != 0) {        // tu peux rassembler les deux swtiches en paramétrisant 'x' et 'o' avec une variable et la condition
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("\nA quelle position souhaitez-vous mettre le \"x\"?");
                 int asnwerX = scanner.nextInt();
@@ -50,7 +50,7 @@ public class TicTacToe {
                 turn++;
                 show(state);
                 TicTacToeWin tictactoewin = new TicTacToeWin();
-                tictactoewin.WinCondition(state);
+                tictactoewin.winCondition(state);   // camel case
             }
         }
     }
